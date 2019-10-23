@@ -4,7 +4,7 @@
   "description": "draw.io desktop",
   "main": "electron.js",
   "scripts": {
-    "start": "electron ./drawio/src/main/webapp",
+    "start": "set NODE_ENV=development&& electron ./drawio/src/main/webapp",
     "sync": "node ./sync.js",
     "release-win": "electron-builder --config electron-builder-win.json",
     "release-linux": "electron-builder --config electron-builder-linux-mac.json",
